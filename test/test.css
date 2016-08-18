@@ -1,0 +1,9 @@
+body,
+.someClass,
+#someID:hover {
+  color: #012345;
+}
+
+p::first-letter {
+  text-transform: uppercase;
+}

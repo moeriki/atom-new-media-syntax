@@ -1,0 +1,196 @@
+@import "colors";
+@import "syntax-variables";
+
+atom-text-editor,
+:host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter,
+:host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line,
+:host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection,
+:host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide,
+:host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide,
+:host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+
+atom-text-editor .invisible-character,
+:host .invisible-character {
+  color: @syntax-invisible-character-color;
+  background-color: none !important;
+}
+
+atom-text-editor .search-results .marker .region,
+:host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region,
+:host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor,
+:host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region,
+:host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused .line.cursor-line,
+:host(.is-focused) .line-number.cursor-line-no-selection,
+:host(.is-focused) .line.cursor-line {
+  background-color: rgba(101, 115, 126, 0.33);
+}
+
+.comment,
+.punctuation.definition.comment {
+  color: @dustyGray;
+}
+
+.variable {
+  color: lighten(@dustyGray, 33%);
+  // color: @trafficGreen;
+}
+
+.keyword,
+.storage.modifier,
+.storage.type {
+  color: @blueLilac;
+}
+
+.js.keyword.other {
+  font-style: italic;
+}
+
+.keyword.control,
+.keyword.operator,
+.constant.other.color,
+.punctuation,
+.punctuation.string,
+.meta.tag,
+.punctuation.definition.tag,
+.php.punctuation.separator.inheritance,
+.html.punctuation.definition.tag,
+.html.punctuation.definition.tag.begin,
+.html.punctuation.definition.tag.end {
+  color: @turquoiseBlue;
+}
+
+.entity.name.tag,
+.sgml.meta.tag {
+  color: @vermillion;
+}
+
+.entity.name.function,
+.support.function,
+.entity.name.class,
+.keyword.other.special-method {
+  color: @skyBlue;
+}
+
+.meta.block-level,
+.meta.brace.curly,
+.meta.function-call {
+  color: @pastelBlue;
+}
+
+.support.other.variable,
+.string.other.link {
+  color: @raspberryRed;
+}
+
+.constant.character,
+.constant.language,
+.constant.numeric,
+.constant.regexp,
+.constant.support,
+.variable.constant,
+.variable.parameter,
+.keyword.other.unit,
+.punctuation.section.embedded {
+  color: @yellowOrange;
+}
+
+.string,
+.variable.quoted.elixir,
+.constant.other.symbol,
+.entity.other.inherited-class,
+.markup.heading {
+  color: @trafficGreen;
+}
+
+.variable.constant.elixir,
+.entity.name.type,
+.entity.name.type.class,
+.support.type,
+.support.class,
+.php.meta.use,
+.php.support.other.namespace.use,
+.php.support.other.namespace,
+.entity.name.method {
+  color: @saffronYellow;
+}
+
+.js.entity.name.module,
+.js.variable.import.parameter,
+.js.variable.other.class {
+  color: @vermillion;
+}
+
+.variable.language {
+  color: @vermillion;
+  font-style: italic;
+}
+
+.js.meta.method {
+  color: @white;
+}
+
+.entity.other.attribute-name {
+  color: @skyBlue;
+}
+
+.markup.inserted { color: @yellowGreen; }
+.markup.changed  { color: @yellowOrange; }
+.markup.deleted  { color: @vermillion; }
+
+.regexp.string { color: @turquoiseBlue; }
+
+.constant.character.escape,
+.css.constant.character.escape,
+.scss.constant.character.escape {
+  color: @trafficGreen;
+}
+
+* .link *,
+* .uri *,
+* .url * {
+  text-decoration: underline;
+}
