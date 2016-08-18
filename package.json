@@ -8,7 +8,7 @@
     "theme",
     "medialaan"
   ],
-  "repository": "https://github.com/moeriki/new-media-syntax",
+  "repository": "https://github.com/moeriki/atom-new-media-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
