@@ -49,6 +49,7 @@ module.exports = (function myFunc1([var1], { var2 = 'default' }) {
       window.document.setTimeout(myFunc1, 100);
       break;
   }
+  return var1;
 })();
 
 myLabel: myFunc1(var1, var2);
